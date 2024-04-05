@@ -95,7 +95,14 @@ for (0 => int i; i < rows; i++) {
 
       // Play button
       action.addEventListener('click', async () => {
-        window.theChuck ??= await Chuck.init([]);
+        window.theChuck ??= await Chuck.init(
+	[
+	{
+              serverFilename: 'https://gwatts.github.io/WCVI_lonlat_prodigy.csv',
+              virtualFilename: 'WCVI_lonlat_prodigy.csv'
+        }
+	]
+	);
         switch (status) {
           case states.playing:
             status = states.stopped;
