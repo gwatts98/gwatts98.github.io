@@ -67,7 +67,7 @@ SinOsc osc => dac; // play the data with a sine wave
 // SawOsc osc => dac; // play the data with a sine wave
 for (0 => int i; i < rows; i++) { // loop through the data
   osc.freq(val[i]); // assign co2 ppm to frequency
-  osc.gain(val[i] / 50.047070);
+  osc.gain(0.5);
   100::ms => now; // wait 10 ms
 }
 
@@ -155,14 +155,14 @@ for (0 => int i; i < rows; i++) {
       });
     </script>
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/terryzfeng/webchuck-ide@main/cdn/webchuck.css">
-    <title>ProdigyW11_gwatts</title>
+    <title>ProdigyW11</title>
   </head>
 
   <body>
     <header>
-      <h1><span id="title" style="font-weight: bold">ProdigyW11_gwatts</span></h1>
+      <h1><span id="title" style="font-weight: bold">ProdigyW11</span></h1>
       <div id="author" style="font-style: italic;">Grace Watts</div>
-      <p id="description" style="padding-bottom: 0.5rem;">fish farms on Vancouver Island spatial sonification</p>
+      <p id="description" style="padding-bottom: 0.5rem;">fish farms on Vancover island</p>
       <div id="webchuck-gui"></div>
       <button id="action">
         Play
