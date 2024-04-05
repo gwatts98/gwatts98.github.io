@@ -1,1 +1,10 @@
-Hello World
+action.addEventListener('click', async () => {
+window.theChuck ??= await Chuck.init(
+    [
+        {
+            // serverFilename: 'https://cchafe.github.io/soniServer/co2_mm_mlo_2024.csv',
+            serverFilename: 'https://gwatts98.github.io/WCVI_lonlat_prodigy.csv',
+            virtualFilename: 'WCVI_lonlat_prodigy.csv'
+        }
+    ]
+);
